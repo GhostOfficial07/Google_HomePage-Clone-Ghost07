@@ -1,0 +1,424 @@
+body{
+    background-image: url(background/home-page-bg.png);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav-menu li, img{
+    margin-right: 13px;
+    align-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.lab-icon, .app-icon{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.profile-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 3px;  
+}
+
+/*----- LOGO -----*/
+.google-logo{
+    position: absolute;
+    width: 270px;
+    left: 630px;
+    top: 165px;
+    cursor: auto;
+}
+
+/*----- SEARCH FIELD -----*/
+.search{
+    position: relative;
+    width: 521px;
+    height: 41px;
+    left: 420px;
+    top: 213px;
+    border-radius: 50px;
+    list-style-type: none;
+    outline: none;
+    border: 1px solid white;
+    font-size: 16px;
+}
+
+.search-icon{
+    position: relative;
+    width: 30px;
+    left: 485px;
+    top: 230px;
+    background-color: white;
+    padding-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+
+.voice-search-icon{
+    position: relative;
+    width: 20px;
+    left: 340px;
+    top: 230px;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 11px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.image-search-icon{
+    position: relative;
+    width: 18px;
+    left: 340px;
+    top: 230px;
+    background-color: white;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*----- SHORTCUT APPS -----*/
+.shortcut{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    top: 375px;
+    left: 540px;
+}
+
+.short-app{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+}
+
+.shortcut-icon{
+    height: 22px;
+    width: 22px;
+    margin: 10px 30px;
+    padding: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.more-icon{
+    position: relative;
+    width: 5px;
+    bottom: 58px;
+    left: 83px;
+    visibility: hidden;
+    padding: 2px 8px;
+    border-radius: 50%;
+    transition: 0s linear 0.2s;
+}
+
+.short-app h5{
+    margin-top: -5px;
+    font-size: 14px;
+    font-weight: 15;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*----- CUSTOMIZE ICON -----*/
+.customize-icon{
+    position: absolute;
+    left: 730px;
+    top: 345px;
+}
+
+.customize-icon img{
+    height: 18px;
+    width: 18px;
+    margin: 10px 30px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 50%;
+}
+
+/*----- GOOGLE APPS -----*/
+.googleApps{
+    background-color: rgb(39, 38, 38);
+    border-radius: 30px;
+    position: absolute;
+    width: 365px;
+    height: 460px;
+    overflow-y: scroll;
+    left: 1160px;
+    top: 70px;
+    visibility: hidden;
+}
+
+/* Overall scrollbar style */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the entire scrollbar */
+}
+
+/* Track style */
+::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Handle style */
+::-webkit-scrollbar-thumb {
+    background: rgb(74, 74, 74);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(95, 94, 94);
+}
+
+#googleApp{
+    visibility: visible;
+}
+
+.apps-content{
+    margin-bottom: 10px;
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.google-apps-items1{
+    background-color: rgb(25, 25, 25);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 335px;
+    height: 530px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.google-apps-items1 img{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 0px;
+    align-self: center;
+    justify-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.apps-content h6{
+    margin: 2px;
+    font-weight: 10;
+    font-size: 13px;
+}
+
+.google-apps-items2{
+    background-color: rgb(25, 25, 25);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 335px;
+    height: 620px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.google-apps-items2 img{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 0px;
+    align-self: center;
+    justify-self: center;
+}
+
+.btn{
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: lightblue;
+    font-size: 15px;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+
+/*------ PROFILE CARD -----*/
+.profile-card{
+    position: relative;
+    text-align: center;
+    left: 1110px;
+    top: -80px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
+    width: 390px;
+    height: 360px;
+    margin: 7px;
+    padding: 5px;
+    font-family: sans-serif;
+    visibility: hidden;
+} 
+
+#id-profile-card{
+    visibility: visible;
+}
+
+.profile-card h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 20;
+}
+
+.profile-card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-card h4{
+    font-weight: 10;
+    font-size: 20px;
+}
+
+.profile-card p{
+    margin-left: 85px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    width: 200px;
+    padding: 5px 15px;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.profile-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pro-btn1{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 15px 50px;
+    border: 1px solid rgb(19, 19, 19);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+}
+
+.pro-btn2{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 15px 60px;
+    border: 1px solid rgb(19, 19, 19);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+.text-btn{
+    margin: 30px;
+}
+
+.txt-btn{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/*----- HOVER EFFECT -----*/
+.nav-menu li:hover{
+    text-decoration: underline;
+}
+
+.nav-menu img:hover{
+    background-color: rgba(255, 255, 255, 0.098);
+    border-radius: 50%;
+}
+
+.profile-icon:hover{
+    background-color: rgba(255, 255, 255, 0.098);
+}
+
+.short-app:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 5px;
+}
+
+.more-icon:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.short-app:hover .more-icon{
+    visibility: visible;
+}
+
+.apps-content:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.153);
+}
+
+.profile-card p:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.pro-btn1:hover, .pro-btn2:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.txt-btn:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4px;
+}
